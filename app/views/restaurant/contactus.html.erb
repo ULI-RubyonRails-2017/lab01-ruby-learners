@@ -1,0 +1,26 @@
+<h1>Contact Us</h1>
+<p>For more information about us</p>
+<table>
+  <tr>
+    <td>Address</td>
+    <td>35 Nguyen Hue</td>
+  </tr>
+  <tr>
+    <td>Phone Number</td>
+    <td>0123456789</td>
+  </tr>
+</table>
+
+<div id="map" style="height:400px;background:grey"></div>
+
+<script>
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+    center: new google.maps.LatLng(10.7718664,106.7032462), zoom: 16
+  };
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBf8ca06jV6VOz_f2whfjJ6rNz3jYCfLhg&callback=myMap"></script>

@@ -6,9 +6,32 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <nav class="navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header-logo">
+          <a class="navbar-brand" href="/">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_QB3EkBj2813h6TbPwdGDjq7aio4mBrgXCblHZ9Svhh8KGTp9GQ" alt="Home Page">
+          </a>
+        </div>
+
+        <div class="avbar-header-menu">
+          <ul class="navbar-nav">
+            <li class="active"><a href="/">HOME</a></li>
+            <li><a href="Menu">Menu</a></li>
+            <li><a href="ContactUs">Contact Us</a></li>
+          </ul>
+          <ul class="navbar-nav-navbar-right">
+            <li><a href="/"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="/"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </head>
 
   <body>
     <%= yield %>
+    <a href="test" click to test>
   </body>
 </html>
