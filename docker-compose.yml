@@ -6,13 +6,16 @@ services:
       - 80:3000
     volumes:
       - .:/web
+    container_name: webapp
     entrypoint: sh /web/startup.sh
+    env_file: .env
+    stdin_open: true
+    tty: true
     links:
       - db
   db:
     image: postgres
     ports:
       - 5432:5432
-    environment:
-      POSTGRES_PASSWORD: 123
-      POSTGRES_USER: web
+    container_name: db
+    env_file: .env

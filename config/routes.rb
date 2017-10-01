@@ -1,10 +1,8 @@
 Rails.application.routes.draw do
-  get 'restaurant/index'
-  resources :articles
-  root 'restaurant#index'
 
-  get 'Menu', to: 'restaurant#Menu'
-  get 'ContactUs' ,to: 'restaurant#ContactUs'
+  root 'statics#index'  
+  get 'Menu', to: 'statics#Menu'
+  get 'ContactUs' ,to: 'statics#ContactUs'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
